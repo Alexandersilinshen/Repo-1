@@ -28,6 +28,7 @@ class GameView(arcade.Window):
         self.player_list = arcade.SpriteList()
         self.physics_engine = None
     
+
         self.coins_collected = 0
         self.coins_needed = 46
         self.time_left = 120
