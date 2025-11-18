@@ -28,7 +28,6 @@ class GameView(arcade.Window):
         self.player_list = arcade.SpriteList()
         self.physics_engine = None
     
-        self.score_text = arcade.Text("Score: 0", 10, 10, arcade.color.WHITE, 18)
         self.coins_collected = 0
         self.coins_needed = 46
         self.time_left = 120
@@ -78,7 +77,7 @@ class GameView(arcade.Window):
 
         self.gui_camera.use()
 
-        self.score_text.draw()
+  
 
         
         time_color = arcade.color.WHITE if self.time_left > 10 else arcade.color.RED
